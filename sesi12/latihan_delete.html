@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete data</title>
+</head>
+<body>
+   <h3>hapus data</h3>
+   <form>
+    <div>
+        Nama Lengkap
+        <input type="text" id="txNama">
+    </div>
+    <div>
+        Email
+        <input type="text" id="txEmail">
+    </div>
+    <div id="tombol">
+        <button type="button" onclick="deldata()">hapus data</button>
+      
+    </div>
+   </form> 
+   <script>
+     let iduser = getparam("id");
+     let url= "https://webpro.ptov.my.id/api/curduser.php?aksi=get&q="+iduser;
+     const xmlhttp = newXMLHttpRequest();
+     xmlhttp.open("Get",url,true);
+     xmlhttp.onload = function(){
+        const dta = JSON.parse(this.responseText);
+     }
+     function getparam(cx){
+     const querystrinhg = window.location.search;
+     const UPS = new URL.searchparams(querystring);
+     return USP.get (cx);
+   }
+   function deldata(){
+
+   }
+</script>  
+</body>
+</html>
