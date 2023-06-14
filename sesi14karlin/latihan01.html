@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQUERY</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    
+    <h3>JUDUL</h3>
+    <div id="pesan">isi pesan</div>
+    <div class="pesan">isi pesan</div>
+
+    <h2>SUBJUDUL</h2>
+    <div id="id">isi buku</div>
+    <div class="id">nama penulis buku</div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script>
+    
+    $(function(){
+        $("#pesan").html("isi yang baru");
+        $(".pesan.").html("isi class yang baru");
+        $("h3").html("Belajar JQUERY");
+        $("h2").html("KODING JQUERY");
+    });
+  </script>
+</body>
+</html>
